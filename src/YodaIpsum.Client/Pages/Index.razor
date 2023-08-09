@@ -1,0 +1,46 @@
+﻿@page "/"
+@inject HttpClient Http
+
+<h1>Lorem Ipsum text, you seek, mmm?</h1>
+
+<p>
+    Mode, you must choose:
+    <label for="paras">Paragraphs</label>
+    <input type="radio" id="paras" name="mode" value="paragraphs" checked="checked" @onchange="SetMode" />
+    <label for="sentences">Sentences</label>
+    <input type="radio" id="sentences" name="mode" value="sentences" @onchange="SetMode" />
+</p>
+<p>
+    <label>
+        Number of @mode you seek:
+        <input type="number" id="paragraphs" min="1" max="99" />
+    </label>
+</p>
+<p>
+    <button type="submit" @onclick="GetQuote"></button>
+</p>
+
+@code {
+
+    public string Mode;
+    public int Length;
+    public string QuoteText;
+
+    protected override async Task OnInitializedAsync() {
+        
+    }
+
+    private void SetMode(ChangeEventArgs args) {
+        Mode = args.Value;
+    }
+
+    private string GetQuote(int length, string mode) {
+        try {
+            var response = string.Join("</p><p>", await Http.GetFromJsonAsync<string[]>("/api/Quotes"));
+            return $"<p>{response}</p>"
+        }
+        catch (Exception ex) {
+            Console.WriteLine(ex.ToString());
+        }
+    }
+}

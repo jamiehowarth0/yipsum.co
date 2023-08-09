@@ -10,7 +10,7 @@ using BlazorApp.Shared;
 
 namespace BlazorApp.Api
 {
-    public static class WeatherForecastFunction
+    public static class QuotesFunction
     {
         private static string GetSummary(int temp)
         {
@@ -32,7 +32,7 @@ namespace BlazorApp.Api
             return summary;
         }
 
-        [FunctionName("WeatherForecast")]
+        [FunctionName("Quotes")]
         public static IActionResult Run(
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = null)] HttpRequest req,
             ILogger log)

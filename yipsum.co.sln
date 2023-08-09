@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YodaIpsum.Shared.IntegrationTests", "tests\YodaIpsum.Shared.IntegrationTests\YodaIpsum.Shared.IntegrationTests.csproj", "{EE2E1A07-21BE-4A54-BB0A-76F12B97091E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YodaIpsum.Api", "src\YodaIpsum.Api\YodaIpsum.Api.csproj", "{C3DF6265-EC91-47E4-866A-FA5DC506F0EC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YodaIpsum.Client", "src\YodaIpsum.Client\YodaIpsum.Client.csproj", "{BBC20A72-105F-42EF-8683-3BC6D873AF4F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YodaIpsum.Shared", "src\YodaIpsum.Shared\YodaIpsum.Shared.csproj", "{BD579CA3-1570-4CE2-BEBF-EF3252CDBC10}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YodaIpsum.Tweeter", "src\YodaIpsum.Tweeter\YodaIpsum.Tweeter.csproj", "{67636284-E1BF-46F4-9B48-C49F41E213AE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{2FABA126-068D-43FB-93F9-1B680468E904}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE2E1A07-21BE-4A54-BB0A-76F12B97091E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE2E1A07-21BE-4A54-BB0A-76F12B97091E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE2E1A07-21BE-4A54-BB0A-76F12B97091E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE2E1A07-21BE-4A54-BB0A-76F12B97091E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3DF6265-EC91-47E4-866A-FA5DC506F0EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3DF6265-EC91-47E4-866A-FA5DC506F0EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3DF6265-EC91-47E4-866A-FA5DC506F0EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3DF6265-EC91-47E4-866A-FA5DC506F0EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBC20A72-105F-42EF-8683-3BC6D873AF4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBC20A72-105F-42EF-8683-3BC6D873AF4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBC20A72-105F-42EF-8683-3BC6D873AF4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBC20A72-105F-42EF-8683-3BC6D873AF4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD579CA3-1570-4CE2-BEBF-EF3252CDBC10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD579CA3-1570-4CE2-BEBF-EF3252CDBC10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD579CA3-1570-4CE2-BEBF-EF3252CDBC10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD579CA3-1570-4CE2-BEBF-EF3252CDBC10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67636284-E1BF-46F4-9B48-C49F41E213AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67636284-E1BF-46F4-9B48-C49F41E213AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67636284-E1BF-46F4-9B48-C49F41E213AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67636284-E1BF-46F4-9B48-C49F41E213AE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EE2E1A07-21BE-4A54-BB0A-76F12B97091E} = {2FABA126-068D-43FB-93F9-1B680468E904}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F29999CD-3C9D-4894-8F10-4372E1347DF7}
+	EndGlobalSection
+EndGlobal
